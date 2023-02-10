@@ -1,0 +1,219 @@
+/* Задаємо основні кольори документу */
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --hero-image-text: #FFFFFF;
+    --futer-text: #E7E9FC;
+    --futer-text-studio: #F4F4FD;
+    --accent-text-color: #4D5AE5;
+    --border-color: #E7E9FC;
+    --btn-hov-foc-backcolor: #4D5AE5;
+    --futer-hero-backcolor: #2E2F42;
+    --secondary-backcolor: #F4F4FD;
+    --basic-backcolor: #FFFFFF;
+    }
+
+/* Задаємо головний шрифт сторінок */
+body {
+    font-family: Roboto, sans-serif;
+}
+/* Стилізація логотипу */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--title-text-color);
+}
+
+.logo-web {
+    color: var(--accent-text-color);
+}
+/* коментар */
+footer {
+    background: var(--futer-hero-backcolor);
+}
+/* Колір частини логотипу(Studio) в футері */
+.logo-studio {
+    color: var(--futer-text-studio);
+}
+/* Колір тексту абзацу в футері */
+.text-footer {
+    color: var(--futer-text);
+}
+/* Прибираємо підкреслення посилань */
+a {
+    text-decoration: none;
+}
+/* Прибираємо крапки в ненумерованих списках */
+ul {
+    list-style: none;
+}
+/* Стилі тексту посилань в навігації */
+a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Стилі при hover,focus для посилань в навігації */
+.nav:hover,
+.nav:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+}
+
+/* Підсвітка активної сторінки */
+.site-nav .nav.current {
+    color: var(--accent-text-color);
+}
+
+/* Стилі для контактів */
+.mail-link,
+.phone-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+/* Стилі при hover,focus для контактів */
+.mail-link:hover,
+.phone-link:hover,
+.mail-link:focus,
+.phone-link:focus {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+}
+/* hero image background */
+.hero-image {
+    background: var(--futer-hero-backcolor);
+}
+/* Стилі для головного заголовка сторінки */
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--hero-image-text);
+}
+/* Стилі для головної кнопки сторінки */
+.main-button {
+    background: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Стилі для тексту кнопки */
+.main-button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--hero-image-text);
+    font-family: Roboto;
+}
+/* ховаємо заголовок h2 Goals of Web Studio */
+.invisible-title {
+    display: none;
+}
+/* Стилі заголовків h3 в 2й секції */
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+/* Стилі всіх абзаців */
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+/* Стилі заголовка 3ї секції */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+}
+/* Стилі для секції 4 */
+.team-section {background: var(--secondary-backcolor);}
+
+/* Стиль для карток в секції 4 */
+.team-card {
+    background: var(--basic-backcolor);
+}
+
+/* Стилі кнопок */
+button {
+    background: var(--secondary-backcolor);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Стилі тексту кнопок */
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--accent-text-color);
+    font-family: Roboto;
+}
+/* Стилі при hover,focus для кнопок */
+.filter-button:hover,
+.filter-button:focus {
+    background: var(--btn-hov-foc-backcolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--hero-image-text);
+}
+
+/* Стилі карточок проектів */
+.project-card {
+    box-sizing: border-box;
+    background: var(--basic-backcolor);
+    border: 1px solid var(--border-color);
+}
+
+/* Стилі карточок проектів при hover,focus */
+.project-card:hover,
+.project-card:focus {
+    box-sizing: border-box;
+    background: var(--basic-backcolor);
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Стилі зоголовків h2 в списку робіт */
+.titles-of-works {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
