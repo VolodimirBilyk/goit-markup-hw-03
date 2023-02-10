@@ -7,7 +7,7 @@
     --futer-text-studio: #F4F4FD;
     --accent-text-color: #4D5AE5;
     --border-color: #E7E9FC;
-    --btn-hov-foc-backcolor: #4D5AE5;
+    --btn-hov-foc-backcolor: #404BBF;
     --futer-hero-backcolor: #2E2F42;
     --secondary-backcolor: #F4F4FD;
     --basic-backcolor: #FFFFFF;
@@ -24,13 +24,15 @@ body {
     font-size: 18px;
     line-height: 1.33;
     color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .logo-web {
     color: var(--accent-text-color);
 }
 /* коментар */
-footer {
+.footer {
     background: var(--futer-hero-backcolor);
 }
 /* Колір частини логотипу(Studio) в футері */
@@ -40,17 +42,22 @@ footer {
 /* Колір тексту абзацу в футері */
 .text-footer {
     color: var(--futer-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 /* Прибираємо підкреслення посилань */
 a {
     text-decoration: none;
 }
 /* Прибираємо крапки в ненумерованих списках */
-ul {
+.utitled-list,
+.site-nav {
     list-style: none;
 }
 /* Стилі тексту посилань в навігації */
-a {
+.nav {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -65,7 +72,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--accent-text-color);
+    color: var(--btn-hov-foc-backcolor);
 }
 
 /* Підсвітка активної сторінки */
@@ -82,7 +89,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 /* Стилі при hover,focus для контактів */
 .mail-link:hover,
@@ -95,14 +102,14 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--accent-text-color);
+    color: var(--btn-hov-foc-backcolor);
 }
 /* hero image background */
 .hero-image {
     background: var(--futer-hero-backcolor);
 }
 /* Стилі для головного заголовка сторінки */
-h1 {
+.main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -116,6 +123,15 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* Стилі при hover,focus для головної кнопки */
+.main-button:hover,
+.main-button:focus {
+    background: var(--btn-hov-foc-backcolor);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+}
+
 /* Стилі для тексту кнопки */
 .main-button-text {
     font-weight: 500;
@@ -127,12 +143,22 @@ h1 {
     color: var(--hero-image-text);
     font-family: Roboto;
 }
+
 /* ховаємо заголовок h2 Goals of Web Studio */
 .invisible-title {
     display: none;
 }
 /* Стилі заголовків h3 в 2й секції */
-h3 {
+.goals-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+/* Стилі заголовків h3 в 4й секції */
+.name-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -140,7 +166,7 @@ h3 {
     color: var(--title-text-color);
 }
 /* Стилі всіх абзаців */
-p {
+.description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
