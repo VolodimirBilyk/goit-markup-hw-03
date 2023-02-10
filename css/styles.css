@@ -17,6 +17,49 @@
 body {
     font-family: Roboto, sans-serif;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-right: 76px;
+    margin-bottom: 24px;
+    margin-left: 15px;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.utitled-list-address {
+    display: flex;
+}
+
+.address {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.mail-link {
+    margin-right: 40px;
+}
+
 /* Стилізація логотипу */
 .logo {
     font-family: 'Raleway';
@@ -31,7 +74,7 @@ body {
 .logo-web {
     color: var(--accent-text-color);
 }
-/* коментар */
+/* Background color для Футера */
 .footer {
     background: var(--futer-hero-backcolor);
 }
@@ -53,6 +96,7 @@ a {
 }
 /* Прибираємо крапки в ненумерованих списках */
 .utitled-list,
+.utitled-list-address,
 .site-nav {
     list-style: none;
 }
