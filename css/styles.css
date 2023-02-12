@@ -13,7 +13,7 @@
     --basic-backcolor: #FFFFFF;
     }
 
-/* Задаємо головний шрифт сторінок */
+
 
 *,
 *::before,
@@ -21,9 +21,13 @@
     box-sizing: border-box;
 }
 
+/* Задаємо головний шрифт сторінок */
+
 body {
     font-family: Roboto, sans-serif;
 }
+
+/* Скидаэмо браузерні приколи */
 
 p,
 h1,
@@ -47,6 +51,14 @@ img {
 button {
     cursor: pointer;
 }
+
+/* Полоска для хедера */
+
+header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Блоки для хедера */
 
 .container {
     margin-left: auto;
@@ -114,6 +126,7 @@ button {
 .main-button {
     margin: 0 auto;
     display: block;
+    padding: 16px 32px;
 }
 
 .hero-image {
@@ -200,7 +213,7 @@ button {
 
 .team-card {
     flex-basis: calc((100% - 72px)) / 4;
-    margin-bottom: 120px;
+    padding-bottom: 32px;
 }
 
 .name-title {
@@ -226,9 +239,7 @@ button {
 }
 
 .footer-logo {
-   
-    margin-left: 0;
-    
+   margin-left: 0;
 }
 
 .call-to-action {
@@ -236,7 +247,54 @@ button {
     width: 264px;
 }
 
+/* Блоки Портфоліо Кнопки */
 
+.container-selection {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button-selection {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Блоки портфоліо робити */
+
+.container-projects {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
+
+.project-item {
+    width: 360px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.project-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.work-discription {
+    margin-bottom: 32px;
+}
 /* Стилізація логотипу */
 .logo {
     font-family: 'Raleway';
@@ -409,6 +467,8 @@ a {
 /* Стиль для карток в секції 4 */
 .team-card {
     background: var(--basic-backcolor);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Стилі кнопок */
@@ -420,6 +480,12 @@ button {
 }
 /* Стилі тексту кнопок */
 .filter-button {
+    padding: 12px 24px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -458,6 +524,10 @@ button {
 
 /* Стилі зоголовків h2 в списку робіт */
 .titles-of-works {
+    margin-top: 32px;
+    margin-bottom: 8px;
+
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
