@@ -14,6 +14,13 @@
     }
 
 /* Задаємо головний шрифт сторінок */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -30,6 +37,15 @@ h6 {
 
 ul {
     padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
@@ -38,6 +54,8 @@ ul {
     width: 1158px;
     align-items: center;
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main-nav {
@@ -73,6 +91,151 @@ ul {
 .mail-link {
     margin-right: 40px;
 }
+
+/* Блоки першої секції */
+
+.container-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 48px;
+    width: 498px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-button {
+    margin: 0 auto;
+    display: block;
+}
+
+.hero-image {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
+}
+
+/* Блоки другої секції */
+
+.container-goals {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.goals {
+    display: flex;
+    gap: 24px;
+}
+
+.item-goals {
+    flex-basis: calc((100% - 72px)) / 4;
+}
+
+.goals-title {
+    margin-bottom: 8px;
+}
+
+/* Блоки третьої секції */
+
+.container-we-doing {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.works-picture {
+    flex-basis: calc((100% - 48px)) / 3;
+}
+
+.works-images {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* Блоки четвертої секції */
+
+.container-team {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    flex-basis: calc((100% - 72px)) / 4;
+    margin-bottom: 120px;
+}
+
+.name-title {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.job-title {
+    text-align: center;
+}
+
+/* Блоки футера */
+
+.container-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-logo {
+   
+    margin-left: 0;
+    
+}
+
+.call-to-action {
+    margin-top: 16px;
+    width: 264px;
+}
+
 
 /* Стилізація логотипу */
 .logo {
