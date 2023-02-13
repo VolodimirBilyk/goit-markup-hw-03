@@ -288,13 +288,14 @@ header {
 
 /* Блоки портфоліо робити */
 
-/* Стилі карточок проектів */
-
 .row-content {
     border: 1px solid var(--border-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-top: -1px;
 }
+
+/* Стилі карточок проектів */
 
 .project-card {
     box-sizing: border-box;
