@@ -151,14 +151,14 @@ header {
 /* Блоки другої секції */
 
 .container-goals {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
-    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+    width: 1158px;
+    align-items: center;
 }
 
 .goals {
@@ -167,6 +167,7 @@ header {
 }
 
 .item-goals {
+    width: 264px;
     flex-basis: calc((100% - 72px)) / 4;
 }
 
@@ -177,8 +178,7 @@ header {
 /* Блоки третьої секції */
 
 .container-we-doing {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
@@ -226,11 +226,14 @@ header {
 
 .team-card {
     flex-basis: calc((100% - 72px)) / 4;
+}
+
+.card-info {
+    padding-top: 32px;
     padding-bottom: 32px;
 }
 
 .name-title {
-    margin-top: 32px;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -253,6 +256,7 @@ header {
 
 .footer-logo {
    margin-left: 0;
+   margin-right: 0;
 }
 
 .call-to-action {
@@ -411,6 +415,7 @@ a {
 /* Стилі для головної кнопки сторінки */
 .main-button {
     background: var(--accent-text-color);
+    border: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -422,6 +427,7 @@ a {
     background: var(--btn-hov-foc-backcolor);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
+    border: var(--btn-hov-foc-backcolor);
 }
 
 /* Стилі для тексту кнопки */
@@ -511,6 +517,7 @@ button {
 .filter-button:focus {
     background: var(--btn-hov-foc-backcolor);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--btn-hov-foc-backcolor);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
