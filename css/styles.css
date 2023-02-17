@@ -64,10 +64,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
-    align-items: center;
-    display: flex;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
 }
 
 .main-nav {
@@ -156,11 +159,6 @@ header {
 .container-goals {
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1158px;
     align-items: center;
 }
 
@@ -182,12 +180,7 @@ header {
 
 .container-we-doing {
     padding-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .works-picture {
@@ -208,10 +201,10 @@ header {
 /* Блоки четвертої секції */
 
 .container-team {
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
-    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
 }
